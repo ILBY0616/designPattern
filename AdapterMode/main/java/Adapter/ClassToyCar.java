@@ -1,9 +1,9 @@
 package Adapter;
 
 import Adaptee.ClassToy;
-import Target.ClassCar;
+import AdaptiveTarget.ClassCar;
 
-public class ClassCarAdapter extends ClassToy implements ClassCar {
+public class ClassToyCar extends ClassToy implements ClassCar {
     @Override
     public void run() {
         super.flash();

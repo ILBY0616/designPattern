@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><config>
-    <className>ClassCarAdapter</className>
-    <className>ObjectCarAdapter</className>
+    <className>ClassToyCar</className>
+    <className>ObjectToyCar</className>
+    <className>ClassEncodeData</className>
+    <className>ObjectEncodeData</className>
 </config>

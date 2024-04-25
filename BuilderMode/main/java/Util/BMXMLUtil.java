@@ -26,7 +26,7 @@ public class BMXMLUtil {
 			Class<?> newClass = Class.forName(className);
 			return newClass.newInstance();
 		} catch (Exception exception) {
-			exception.printStackTrace();
+			System.out.println("error: " + exception.getMessage());
 			return null;
 		}
 	}

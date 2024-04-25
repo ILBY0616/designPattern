@@ -23,8 +23,8 @@ public class SFMXMLUtil {
 
             // 返回类名
             return node.getNodeValue();
-        } catch (Exception exception) {
-            exception.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("error:" + e.getMessage());
             return null;
         }
     }

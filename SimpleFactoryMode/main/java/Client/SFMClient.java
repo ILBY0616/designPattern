@@ -14,8 +14,8 @@ public class SFMClient {
                 shape.draw();
                 shape.erase();
             }
-        } catch (Exception exception) {
-            exception.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("error:" + e.getMessage());
         }
     }
 }

@@ -32,7 +32,7 @@ public class AMXMLUtil {
                 beans.add(object);
             }
         } catch (Exception exception) {
-            exception.printStackTrace();
+            System.out.println("error: " + exception.getMessage());
         }
         return beans;
     }

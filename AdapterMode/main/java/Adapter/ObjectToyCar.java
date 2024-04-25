@@ -1,9 +1,9 @@
 package Adapter;
 
 import Adaptee.ObjectToy;
-import Target.ObjectCar;
+import AdaptiveTarget.ObjectCar;
 
-public class ObjectCarAdapter extends ObjectCar {
+public class ObjectToyCar extends ObjectCar {
     ObjectToy objectToy = new ObjectToy();
     @Override
     public void run() {

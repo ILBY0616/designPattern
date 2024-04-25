@@ -48,7 +48,7 @@ public class FMMClient {
             StreamResult result = new StreamResult(new File("FactoryMethodMode/main/resource/config.xml"));
             transformer.transform(source, result);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("error:" + e.getMessage());
         }
     }
 
@@ -61,8 +61,8 @@ public class FMMClient {
                 car = carFactory.makeCar();
                 car.run();
             }
-        } catch (Exception exception) {
-            exception.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("error:" + e.getMessage());
         }
     }
 }

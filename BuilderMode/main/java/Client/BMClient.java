@@ -47,7 +47,7 @@ public class BMClient {
             StreamResult result = new StreamResult(new File("BuilderMode/main/resource/config.xml"));
             transformer.transform(source, result);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("error:" + e.getMessage());
         }
     }
 
@@ -64,8 +64,8 @@ public class BMClient {
                 System.out.print(pattern.getFloor() + " ");
                 System.out.println(pattern.getCeiling() + " ");
             }
-        } catch (Exception exception) {
-            exception.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("error:" + e.getMessage());
         }
 
     }

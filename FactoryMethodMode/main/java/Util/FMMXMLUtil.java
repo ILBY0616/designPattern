@@ -25,8 +25,8 @@ public class FMMXMLUtil {
 			// 返回对象
 			Class<?> newClass = Class.forName(className);
 			return newClass.newInstance();
-		} catch (Exception exception) {
-			exception.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("error:" + e.getMessage());
 			return null;
 		}
 	}
